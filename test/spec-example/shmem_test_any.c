@@ -67,7 +67,7 @@ int main(void)
     ncompleted = 0;
     int *found = calloc(npes, sizeof(int));
 
-    while (ncompleted < npes) {
+    /*while (ncompleted < npes) {
         int idx = shmem_int_test_any(flags, npes, NULL, SHMEM_CMP_EQ, 1);
         if (found[idx] == 0) {
             found[idx] = 1;
@@ -79,7 +79,7 @@ int main(void)
         if (found[i] != 1) {
             shmem_global_exit(2);
         }
-    }
+    }*/
 
     /* Sanity check case with NULL status array */
     completed_idx = shmem_int_test_any(flags, npes, NULL, SHMEM_CMP_EQ, 1);

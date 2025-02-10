@@ -50,11 +50,11 @@ int main(void)
                                         NULL, 0, &new_team[i]);
 
         /* Wait for all PEs to fill in ret before starting the reduction */
-#if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L
+/*#if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L
         shmem_sync(SHMEM_TEAM_WORLD);
-#else
+#else*/
         shmem_team_sync(SHMEM_TEAM_WORLD);
-#endif
+//#endif
         shmem_int_sum_reduce(SHMEM_TEAM_WORLD, &dest_ret, &ret, 1);
 
         /* If success was not global, free a team and retry */

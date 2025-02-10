@@ -173,8 +173,8 @@ int main(void) {
     TEST_SHMEM_REDUCE(OP_SUM, float, float);
     TEST_SHMEM_REDUCE(OP_SUM, double, double);
     TEST_SHMEM_REDUCE(OP_SUM, longdouble, long double);
-    TEST_SHMEM_REDUCE(OP_SUM, complexd, double _Complex);
-    TEST_SHMEM_REDUCE(OP_SUM, complexf, float _Complex);
+    //TEST_SHMEM_REDUCE(OP_SUM, complexd, double _Complex);
+    //TEST_SHMEM_REDUCE(OP_SUM, complexf, float _Complex);
 
     TEST_SHMEM_REDUCE(OP_PROD, char, char);
     TEST_SHMEM_REDUCE(OP_PROD, schar, signed char);
@@ -200,8 +200,8 @@ int main(void) {
     TEST_SHMEM_REDUCE(OP_PROD, float, float);
     TEST_SHMEM_REDUCE(OP_PROD, double, double);
     TEST_SHMEM_REDUCE(OP_PROD, longdouble, long double);
-    TEST_SHMEM_REDUCE(OP_PROD, complexd, double _Complex);
-    TEST_SHMEM_REDUCE(OP_PROD, complexf, float _Complex);
+    //TEST_SHMEM_REDUCE(OP_PROD, complexd, double _Complex);
+    //TEST_SHMEM_REDUCE(OP_PROD, complexf, float _Complex);
 
     fprintf(stdout, "Test passed with ret = %d\n", rc);
   

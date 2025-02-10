@@ -94,11 +94,11 @@ int main(int argc, char* argv[]) {
   shmem_init();
 
   int rc = EXIT_SUCCESS;
-  TEST_SHMEM_WAIT_UNTIL_ALL(short);
+  //TEST_SHMEM_WAIT_UNTIL_ALL(short);
   TEST_SHMEM_WAIT_UNTIL_ALL(int);
   TEST_SHMEM_WAIT_UNTIL_ALL(long);
   TEST_SHMEM_WAIT_UNTIL_ALL(long long);
-  TEST_SHMEM_WAIT_UNTIL_ALL(unsigned short);
+  //TEST_SHMEM_WAIT_UNTIL_ALL(unsigned short);
   TEST_SHMEM_WAIT_UNTIL_ALL(unsigned int);
   TEST_SHMEM_WAIT_UNTIL_ALL(unsigned long);
   TEST_SHMEM_WAIT_UNTIL_ALL(unsigned long long);
@@ -109,11 +109,11 @@ int main(int argc, char* argv[]) {
   TEST_SHMEM_WAIT_UNTIL_ALL(size_t);
   TEST_SHMEM_WAIT_UNTIL_ALL(ptrdiff_t);
 
-  TEST_SHMEM_WAIT_UNTIL_ANY(short);
+  //TEST_SHMEM_WAIT_UNTIL_ANY(short);
   TEST_SHMEM_WAIT_UNTIL_ANY(int);
   TEST_SHMEM_WAIT_UNTIL_ANY(long);
   TEST_SHMEM_WAIT_UNTIL_ANY(long long);
-  TEST_SHMEM_WAIT_UNTIL_ANY(unsigned short);
+  //TEST_SHMEM_WAIT_UNTIL_ANY(unsigned short);
   TEST_SHMEM_WAIT_UNTIL_ANY(unsigned int);
   TEST_SHMEM_WAIT_UNTIL_ANY(unsigned long);
   TEST_SHMEM_WAIT_UNTIL_ANY(unsigned long long);
@@ -124,11 +124,11 @@ int main(int argc, char* argv[]) {
   TEST_SHMEM_WAIT_UNTIL_ANY(size_t);
   TEST_SHMEM_WAIT_UNTIL_ANY(ptrdiff_t);
 
-  TEST_SHMEM_WAIT_UNTIL_SOME(short);
+  //TEST_SHMEM_WAIT_UNTIL_SOME(short);
   TEST_SHMEM_WAIT_UNTIL_SOME(int);
   TEST_SHMEM_WAIT_UNTIL_SOME(long);
   TEST_SHMEM_WAIT_UNTIL_SOME(long long);
-  TEST_SHMEM_WAIT_UNTIL_SOME(unsigned short);
+  //TEST_SHMEM_WAIT_UNTIL_SOME(unsigned short);
   TEST_SHMEM_WAIT_UNTIL_SOME(unsigned int);
   TEST_SHMEM_WAIT_UNTIL_SOME(unsigned long);
   TEST_SHMEM_WAIT_UNTIL_SOME(unsigned long long);

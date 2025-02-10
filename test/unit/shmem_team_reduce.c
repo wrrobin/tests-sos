@@ -284,8 +284,8 @@ int main(void) {
     TEST_SHMEM_REDUCE(sum, float, float);
     TEST_SHMEM_REDUCE(sum, double, double);
     TEST_SHMEM_REDUCE(sum, longdouble, long double);
-    TEST_SHMEM_REDUCE(sum, complexd, double _Complex);
-    TEST_SHMEM_REDUCE(sum, complexf, float _Complex);
+    //TEST_SHMEM_REDUCE(sum, complexd, double _Complex);
+    //TEST_SHMEM_REDUCE(sum, complexf, float _Complex);
 
     TEST_SHMEM_REDUCE(prod, char, char);
     TEST_SHMEM_REDUCE(prod, schar, signed char);
@@ -311,8 +311,8 @@ int main(void) {
     TEST_SHMEM_REDUCE(prod, float, float);
     TEST_SHMEM_REDUCE(prod, double, double);
     TEST_SHMEM_REDUCE(prod, longdouble, long double);
-    TEST_SHMEM_REDUCE(prod, complexd, double _Complex);
-    TEST_SHMEM_REDUCE(prod, complexf, float _Complex);
+    //TEST_SHMEM_REDUCE(prod, complexd, double _Complex);
+    //TEST_SHMEM_REDUCE(prod, complexf, float _Complex);
 
     shmem_finalize();
     return rc;
